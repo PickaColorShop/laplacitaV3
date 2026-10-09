@@ -20,6 +20,16 @@
     fades.forEach(function (f) { io.observe(f); });
   } else fades.forEach(function (f) { f.classList.add('is-in'); });
 
+
+  /* Filtro de eventos */
+  var evchips = $$('[data-evfilter]');
+  evchips.forEach(function (c) {
+    c.addEventListener('click', function () {
+      evchips.forEach(function (x) { x.setAttribute('aria-pressed', x === c); });
+      $$('.evrow').forEach(function (r) { r.hidden = c.dataset.evfilter !== 'todos' && r.dataset.type !== c.dataset.evfilter; });
+    });
+  });
+
   /* ---------------- Directorio ---------------- */
   var dir = $('.dir');
   if (!dir || !window.PLACES) return;

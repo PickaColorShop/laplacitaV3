@@ -8,6 +8,11 @@ Base nueva y separada de la versión anterior. Estático (HTML/CSS/JS sin framew
 | Portada | `index.html` | `/` |
 | Mapa con leyenda | `directorio.html` | `/directorio` (acepta `?cat=`, `?q=`, `?n=`) |
 | Página de miembro | `negocios/tasca-el-pescador.html` | `/negocios/tasca-el-pescador` |
+| El mercado | `mercado.html` | `/mercado` |
+| Restaurantes (incluye Bares y música) | `restaurantes.html` | `/restaurantes` (`#bares`) |
+| Historia | `historia.html` | `/historia` |
+| Eventos | `eventos.html` | `/eventos` |
+| Planifica tu visita (incluye FAQ y contacto) | `visita.html` | `/visita` (`#contacto`) |
 
 Los 27 negocios usan la misma plantilla de página (`negocios/*.html`) para que todos tengan el mismo nivel de presentación.
 
